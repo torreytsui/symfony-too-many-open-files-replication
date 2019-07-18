@@ -5,7 +5,7 @@ A simple application to replicate the [#26146](https://github.com/symfony/symfon
 ## Replicate the issue
 
 ```bash
-ulimit -n 800; vendor/bin/simple-phpunit --filter='testTooManyOpenFiles' -vvv
+$ ulimit -n 800; vendor/bin/simple-phpunit --filter='testTooManyOpenFiles' -vvv
 
 PHPUnit 8.2.5 by Sebastian Bergmann and contributors.
 
@@ -39,7 +39,7 @@ destroy event.
 The number of open files can be examined by:
 
 ```bash
-lsof -p <PID> | wc -l
+$ lsof -p <PID> | wc -l
 ```
 
 By lowing the ulimit to a reasonable number, we can simulate a situation where
