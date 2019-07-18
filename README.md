@@ -6,6 +6,7 @@ A simple application to replicate the [#26146](https://github.com/symfony/symfon
 
 ```bash
 ulimit -n 800; vendor/bin/simple-phpunit --filter='testTooManyOpenFiles' -vvv
+
 PHPUnit 8.2.5 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.2.19 with Xdebug 2.7.2
